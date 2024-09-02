@@ -11,5 +11,7 @@
 
 
 // const CALLBACK_REGEX = /^(?:.+:\/\/.*)(?:\d+|\d*)\/?(.*)$/;
+// const SUBDOMAIN_REGEX = /^(([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+)(:\d+)?(\/\S*)?$/;
+// const OLD_URL_REGEX = new RegExp('(^$)|((.+:\\/\\/.*)(d*)\\/?(.*))');
+const CALLBACK_REGEX = /^(?:$|(?:.+:\/\/[^\d]*\d*\/?.*))$/;
 const SUBDOMAIN_REGEX = /^(([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+)(:\d+)?(\/\S*)?$/;
-const OLD_URL_REGEX = new RegExp('(^$)|((.+:\\/\\/.*)(d*)\\/?(.*))');
