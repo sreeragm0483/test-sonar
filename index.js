@@ -24,4 +24,5 @@
 // const URL_REGEX = /^(?:.+:\/\/[^\/]*\/?.*)$/;
 
 // const CALLBACK_REGEX = new RegExp(`(?:${EMPTY_STRING_REGEX.source}|${URL_REGEX.source})`);
-const CALLBACK_REGEX = /^$|^(?:https?:\/\/)(?:[^/\s:]+)(?::\d+)?(?:\/[^/\s]*)*$/
+// const CALLBACK_REGEX = /^$|^(?:https?:\/\/)(?:[^/\s:]+)(?::\d+)?(?:\/[^/\s]*)*$/
+const CALLBACK_REGEX = /^$|^([a-z][a-z0-9+.-]*):\/\/([^/?#\s]+)(?:\/[^?#\s]*)?(?:\?[^#\s]*)?(?:#.*)?$/i;
