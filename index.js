@@ -20,7 +20,8 @@
 // const CALLBACK_REGEX = /^(?:$|(?:[a-zA-Z]+:\/\/[^\d]*\d*\/?.*))$/;
 // const newOne= /^(?:$|(?:.+:\/\/[^\/]*\/?.*))$/;
 
-const EMPTY_STRING_REGEX = /^$/;
-const URL_REGEX = /^(?:.+:\/\/[^\/]*\/?.*)$/;
+// const EMPTY_STRING_REGEX = /^$/;
+// const URL_REGEX = /^(?:.+:\/\/[^\/]*\/?.*)$/;
 
-const CALLBACK_REGEX = new RegExp(`(?:${EMPTY_STRING_REGEX.source}|${URL_REGEX.source})`);
+// const CALLBACK_REGEX = new RegExp(`(?:${EMPTY_STRING_REGEX.source}|${URL_REGEX.source})`);
+const CALLBACK_REGEX = /^$|^(?:https?:\/\/)(?:[^/\s:]+)(?::\d+)?(?:\/[^/\s]*)*$/
